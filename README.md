@@ -22,6 +22,7 @@ the program must throw an `IllegalArgumentException` and re-prompt input from th
 Please enter the purchase amount.
 8000
 ```
+
 2. enter the winning numbers and bounus number
   - Input 6 unique winning numbers(comma-separated)
   - Input 1 unique bounus number
@@ -41,7 +42,7 @@ Please enter the bonus number.
 
 ### Check Winning Prize Ranks
 - Based on the following criteria, determine the prize for each ticket:
-  
+
 |Prize Ranks|Criteria|Prize Amount (KRW)|
 |:--:|:--:|:--:|
 |1st|Match 6 numbers|2,000,000,000|
@@ -61,9 +62,13 @@ Please enter the bonus number.
 - `Total Prize Amount` using the formula
   
   $\text{Total Prize Amount} =$
+  
   $(1\text{st Prize Amount}) \times (1\text{st Win Tickets}) + (2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) +$
+  
   $(3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) +$
+  
   $(5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
+  
 
 ### Print Output
 1. Number of tickets issued and their numbers(sorted in ascending order)
@@ -91,13 +96,14 @@ You have purchased 8 tickets.
 3. Print profit rate
 Based on `Calculate Profit Rate` Function, print the result of `Calculate Profit Rate`
 
+
 ---
 ## Class Diagram
 
 ```mermaid
 
 ```
---
+---
 ## Sequence Diagram
 
 ```mermaid
