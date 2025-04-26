@@ -55,12 +55,12 @@ Please enter the bonus number.
 
 ### Calculate Profit Rate
 - Calculate the `total return rate` using the formula
-  
-  $$ Profit Rate = \left( \frac{Total Prize Amount}{Total Purchase Amount} \right) \times 100$$
+
+  $Profit Rate = \left( \frac{Total Prize Amount}{Total Purchase Amount} \right) \times 100$
   
 - `Total Prize Amount` using the formula
   
-  $$ Total Prize Amount = (1st Prize Amount) \times (1st Win Tickets) + (2nd Prize Amount) \times (2nd Win Tickets) + (3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) + (5\text{th Prize Amount}) \times (5\text{th Win Tickets})  $$
+  $Total Prize Amount = (1st Prize Amount) \times (1st Win Tickets) + (2nd Prize Amount) \times (2nd Win Tickets) + (3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) + (5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
 
 ### Print Output
 1. Number of tickets issued and their numbers(sorted in ascending order)
