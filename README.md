@@ -68,7 +68,7 @@ Please enter the bonus number.
   $(3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) +$
   
   $(5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
-  
+- The profit rate must be rounded to the nearest tenth (e.g., 62.5%).  
 
 ### Print Output
 1. Number of tickets issued and their numbers(sorted in ascending order)
