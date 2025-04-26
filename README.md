@@ -60,7 +60,10 @@ Please enter the bonus number.
   
 - `Total Prize Amount` using the formula
   
-  $\text{Total Prize Amount} = (1\text{st Prize Amount}) \times (1\text{st Win Tickets}) + (2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) + (3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) + (5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
+  $\text{Total Prize Amount} =$
+  $(1\text{st Prize Amount}) \times (1\text{st Win Tickets}) + (2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) +$
+  $(3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) +$
+  $(5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
 
 ### Print Output
 1. Number of tickets issued and their numbers(sorted in ascending order)
