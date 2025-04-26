@@ -17,7 +17,7 @@ the program must throw an `IllegalArgumentException` and re-prompt input from th
 1. enter the total price to purchase lottery tickets
   - Each ticket costs **1,000 KRW**
   - Amount must be divisible by 1,000
-  - `Number  of  tickets = Total  Price  Input/1,000`
+  - $\text{Number  of  tickets} = \text{Total  Price  Input}/1000$
 ```
 Please enter the purchase amount.
 8000
@@ -56,11 +56,11 @@ Please enter the bonus number.
 ### Calculate Profit Rate
 - Calculate the `total return rate` using the formula
 
-  $Profit Rate = \left( \frac{Total Prize Amount}{Total Purchase Amount} \right) \times 100$
+  $\text{Profit Rate} = \left( \frac{\text{Total Prize Amount}}{\text{Total Purchase Amount}} \right) \times 100$
   
 - `Total Prize Amount` using the formula
   
-  $Total Prize Amount = (1st Prize Amount) \times (1st Win Tickets) + (2nd Prize Amount) \times (2nd Win Tickets) + (3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) + (5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
+  $\text{Total Prize Amount} = (1\text{st Prize Amount}) \times (1\text{st Win Tickets}) + (2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) + (3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) + (5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
 
 ### Print Output
 1. Number of tickets issued and their numbers(sorted in ascending order)
