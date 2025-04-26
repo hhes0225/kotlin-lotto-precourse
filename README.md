@@ -17,7 +17,7 @@ the program must throw an `IllegalArgumentException` and re-prompt input from th
 1. enter the total price to purchase lottery tickets
   - Each ticket costs **1,000 KRW**
   - Amount must be divisible by 1,000
-  - $$Number of tickets = totalPriceInput/1,000$$
+  - $$Number\,of\,tickets = Total\,Price\,Input/1,000$$
 ```
 Please enter the purchase amount.
 8000
@@ -41,6 +41,7 @@ Please enter the bonus number.
 
 ### Check Winning Prize Ranks
 - Based on the following criteria, determine the prize for each ticket:
+  
 |Prize Ranks|Criteria|Prize Amount (KRW)|
 |:--:|:--:|:--:|
 |1st|Match 6 numbers|2,000,000,000|
@@ -48,15 +49,20 @@ Please enter the bonus number.
 |3rd|Match 5 numbers|1,500,000|
 |4th|Match 4 numbers|50,000|
 |5th|Match 3 numbers|5,000|
+
 - Matching is based on unique number comparisons(no duplicate matches allowed)
 
 
 ### Calculate Profit Rate
 - Calculate the `total return rate` using the formula
+  
   $$
+  Profit\,Rate\,=\,
   \text{Profit Rate} = \left( \frac{\text{Total Prize Amount}}{\text{Total Purchase Amount}} \right) \times 100
   $$
+  
 - `Total Prize Amount` using the formula
+  
   $$
   \text{Total Prize Amount} = (1\text{st Prize Amount}) \times (1\text{st Win Tickets}) + (2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) + (3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) + (5\text{th Prize Amount}) \times (5\text{th Win Tickets})
   $$
