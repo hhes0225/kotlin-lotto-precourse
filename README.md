@@ -17,6 +17,8 @@ The solution follows Kotlin coding conventions and the project process guideline
 - At each input step, if the user inputs invalid data,
   the program must throw an `IllegalArgumentException` and re-prompt input from that step.
 
+- Use `Console.readline()` provided by the `camp.nextstep.edu.missionutils` package
+
 1. enter the total price to purchase lottery tickets
 
 - Each ticket costs **1,000 KRW**
@@ -187,4 +189,50 @@ sequenceDiagram
     LottoController ->> LottoResultChecker: calculate profit
     LottoResultChecker -->> LottoController: return profit
     LottoController ->> OutputView: print profit
+```
+---
+## Unit Tests
+
+Unit tests are written using **JUnit5** and **AssertJ**.  
+All business logic (excluding UI interactions) is covered by unit tests.
+
+### Test Coverage
+
+### Test Coverage
+
+| Module | Description |
+|:------:|:------------|
+| LottoTicketIssuerTest | - Issue correct number of tickets based on purchase amount.<br>- Ensure each ticket contains 6 unique numbers between 1–45. |
+| LottoTest | - Validate Lotto creation with exactly 6 numbers.<br>- Validate no duplicate numbers.<br>- Validate all numbers within 1–45 range. |
+| LottoResultCheckerTest | - Check correct winning rank based on matches and bonus number.<br>- Calculate total prize correctly.<br>- Calculate profit rate based on total prize and purchase amount. |
+| InputValidatorTest | - Validate purchase amount parsing:<br> - Empty or non-numeric input<br> - Amount not divisible by 1000<br> - Amount not positive<br>- Validate lotto numbers parsing:<br> - Empty or invalid input<br> - Not exactly 6 numbers<br> - Duplicate numbers<br> - Numbers out of 1–45 range<br>- Validate bonus number:<br> - Duplicate with winning numbers<br> - Out of 1–45 range<br> - Empty or non-numeric input |
+| ApplicationTest | - Simulate complete application flow:<br> - Purchase tickets<br> - Input winning numbers and bonus number<br> - Output winning statistics and profit rate.<br>- Validate error handling on invalid input. |
+
+
+
+### Testing Frameworks
+
+- **JUnit 5** for writing unit tests
+- **AssertJ** for fluent assertion syntax
+- **camp.nextstep.edu.missionutils** for testing random number generation and console input/output
+
+
+### How to Run Tests
+
+On Windows:
+
+```bash
+gradlew.bat clean test
+```
+
+On macOS/Linux:
+
+```bash
+./gradlew clean test
+```
+
+To run a specific test class:
+
+```bash
+gradlew.bat clean test --tests "lotto.domain.LottoTicketIssuerTest"
 ```
