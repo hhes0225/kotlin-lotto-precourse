@@ -197,15 +197,12 @@ Unit tests are written using **JUnit5** and **AssertJ**.
 All business logic (excluding UI interactions) is covered by unit tests.
 
 ### Test Coverage
-
-### Test Coverage
-
 | Module | Description |
 |:------:|:------------|
 | LottoTicketIssuerTest | - Issue correct number of tickets based on purchase amount.<br>- Ensure each ticket contains 6 unique numbers between 1–45. |
 | LottoTest | - Validate Lotto creation with exactly 6 numbers.<br>- Validate no duplicate numbers.<br>- Validate all numbers within 1–45 range. |
 | LottoResultCheckerTest | - Check correct winning rank based on matches and bonus number.<br>- Calculate total prize correctly.<br>- Calculate profit rate based on total prize and purchase amount. |
-| InputValidatorTest | - Validate purchase amount parsing:<br> - Empty or non-numeric input<br> - Amount not divisible by 1000<br> - Amount not positive<br>- Validate lotto numbers parsing:<br> - Empty or invalid input<br> - Not exactly 6 numbers<br> - Duplicate numbers<br> - Numbers out of 1–45 range<br>- Validate bonus number:<br> - Duplicate with winning numbers<br> - Out of 1–45 range<br> - Empty or non-numeric input |
+| InputValidatorTest | - Validate purchase amount parsing:<br> - Empty or non-numeric input<br> - Amount not divisible by 1000<br> - Amount not positive<br>- Validate lotto numbers parsing:<br> - Empty or invalid input<br> - Not exactly 6 numbers<br> - Duplicate numbers<br> - Numbers out of 1–45 range<br>- Validate bonus number:<br> - Empty or non-numeric input <br> - Duplicate with winning numbers<br> - Out of 1–45 range<br> |
 | ApplicationTest | - Simulate complete application flow:<br> - Purchase tickets<br> - Input winning numbers and bonus number<br> - Output winning statistics and profit rate.<br>- Validate error handling on invalid input. |
 
 
