@@ -90,9 +90,13 @@ Please enter the bonus number.
 
   $\text{Total Prize Amount} =$
 
-  $(1\text{st Prize Amount}) \times (1\text{st Win Tickets}) + (2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) +$
+  $(1\text{st Prize Amount}) \times (1\text{st Win Tickets}) +$
 
-  $(3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) + (4\text{th Prize Amount}) \times (4\text{th Win Tickets}) +$
+  $(2\text{nd Prize Amount}) \times (2\text{nd Win Tickets}) +$
+
+  $(3\text{rd Prize Amount}) \times (3\text{rd Win Tickets}) +$
+  
+  $(4\text{th Prize Amount}) \times (4\text{th Win Tickets}) +$
 
   $(5\text{th Prize Amount}) \times (5\text{th Win Tickets})$
 
@@ -146,6 +150,7 @@ classDiagram
     LottoController --> LottoTicketIssuer
     LottoController --> LottoResultChecker
     LottoController --> InputView
+    InputView --> InputValidator
     LottoController --> OutputView
     LottoTicketIssuer --> Lotto
     LottoResultChecker --> MatchResult
